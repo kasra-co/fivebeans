@@ -1,12 +1,14 @@
 {
-  "name": "fivebeans",
+  "name": "@kasra/fivebeans",
   "description": "beanstalkd client & worker daemon for node.",
   "version": "1.3.1",
   "author": "C J Silverio <ceejceej@gmail.com>",
   "bin": {
     "beanworker": "./bin/beanworker"
   },
-  "bugs": "http://github.com/ceejbot/fivebeans/issues",
+  "bugs": {
+    "url": "http://github.com/kasra/fivebeans/issues"
+  },
   "config": {
     "blanket": {
       "pattern": [
@@ -59,5 +61,10 @@
     "test-cov": "mocha -t 20000 --require blanket -R travis-cov test/test-*.js",
     "test-travis": "mocha -R spec -t 20000 test/test-*.js && npm run test-cov",
     "lint": "jshint bin test examples lib && jscs bin lib"
+  },
+  "homepage": "https://github.com/kasra/fivebeans#readme",
+  "directories": {
+    "example": "examples",
+    "test": "test"
   }
 }
